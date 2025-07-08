@@ -12,20 +12,20 @@ class ProjectSpecForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'React, Vue, Angular (comma-separated)'}),
         help_text='Comma-separated list of frontend frameworks'
     )
-    backend_frameworks = forms.CharField(
-        required=False,
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Django, Express, Spring (comma-separated)'}),
-        help_text='Comma-separated list of backend frameworks'
-    )
-    database = forms.CharField(
-        required=False,
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'PostgreSQL, MySQL, MongoDB (comma-separated)'}),
-        help_text='Comma-separated list of databases'
-    )
-    hosting_provider = forms.CharField(
-        required=False,
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'AWS, Heroku, Vercel'})
-    )
+    # backend_frameworks = forms.CharField(
+    #     required=False,
+    #     widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Django, Express, Spring (comma-separated)'}),
+    #     help_text='Comma-separated list of backend frameworks'
+    # )
+    # database = forms.CharField(
+    #     required=False,
+    #     widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'PostgreSQL, MySQL, MongoDB (comma-separated)'}),
+    #     help_text='Comma-separated list of databases'
+    # )
+    # hosting_provider = forms.CharField(
+    #     required=False,
+    #     widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'AWS, Heroku, Vercel'})
+    # )
     
     # Assets
     logo_url = forms.URLField(required=False, widget=forms.URLInput(attrs={'class': 'form-control'}))
